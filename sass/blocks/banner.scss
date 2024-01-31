@@ -1,0 +1,47 @@
+.banner {
+  background-image: url(../img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  &__content {
+    padding: 230px 0 170px;
+
+    @media screen and (max-width: 991px) {
+      padding: 130px 0 100px;
+    }
+  }
+
+  &__headers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .line {
+    margin: 0 auto;
+    width: 1.5px;
+    height: 100%;
+    background-color: white;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+
+    @media screen and (max-width: 991px) {
+      font-size: 35px;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+
+    @media screen and (max-width: 991px) {
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  background-color: $main-grey;
+  padding: 100px 0;
+
+  @media screen and (max-width: 991px) {
+    padding: 70px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xs;
+  }
+
+  &__wrap-elem {
+    display: flex;
+    align-items: center;
+    gap: $gap-s;
+
+    a {
+      color: $black-color;
+      text-decoration: none;
+    }
+  }
+}
