@@ -4,6 +4,10 @@
   top: 0;
   width: 100%;
 
+  &_black {
+    background-color: $black-color;
+  }
+
   a {
     color: white;
   }
@@ -11,5 +15,7 @@
   &__menu {
     display: flex;
     gap: $gap-l;
+
+    font-size: 14px;
   }
 }
