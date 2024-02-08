@@ -1,0 +1,6 @@
+.preference {
+  padding: 100px 0 100px;
+  @media screen and (max-width: 767px) {
+    padding: 70px 0 70px;
+  }
+}

@@ -1,0 +1,36 @@
+.item-block {
+  &__bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 250px;
+    padding: 20px 30px;
+    border-radius: $radius;
+    background-color: $main-grey;
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    background-color: $main-color;
+    padding: 10px 14px;
+    border-radius: $radius;
+    font-weight: 600;
+  }
+
+  &__img {
+    width: 200px;
+
+    img {
+      width: 100%;
+      max-height: 120px;
+      object-fit: contain;
+    }
+  }
+}
