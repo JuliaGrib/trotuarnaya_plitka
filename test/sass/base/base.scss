@@ -1,0 +1,58 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Golos Text', sans-serif;
+
+  color: $black-color;
+}
+
+.overflow {
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.suptitle {
+  color: $grey-color;
+}
+
+.main-color {
+  color: $main-color;
+}
+
+.white-color {
+  color: white;
+}
+
+.file {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.block-phone {
+  display: block;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  transition: 0.4s;
+
+  &:hover {
+    color: $main-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
