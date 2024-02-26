@@ -1,0 +1,56 @@
+.chats {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+
+  &-first {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: $main-color;
+  }
+
+  &-second {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #32a7d9;
+    transition: 0.5s;
+  }
+  &-second.active {
+    transform: translateY(-150px);
+  }
+  &-third {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #51c65e;
+    transition: 0.2s;
+  }
+  &-third.active {
+    transform: translateY(-75px);
+  }
+}
+
+// .chats-first:hover ~ .chats-second {
+//   transform: translateY(-150px);
+// }
+// .chats-first:hover ~ .chats-third {
+//   transform: translateY(-75px);
+// }
