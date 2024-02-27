@@ -14,6 +14,9 @@
     align-items: center;
     border-radius: 50px;
     background-color: $main-color;
+    -webkit-box-shadow: 1px 1px 39px 1px rgba(134, 134, 134, 0.5);
+    -moz-box-shadow: 1px 1px 39px 1px rgba(134, 134, 134, 0.5);
+    box-shadow: 1px 1px 39px 1px rgba(134, 134, 134, 0.5);
   }
 
   &-second {
@@ -26,7 +29,7 @@
     align-items: center;
     border-radius: 50px;
     background-color: #32a7d9;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   &-second.active {
     transform: translateY(-150px);
@@ -41,7 +44,7 @@
     align-items: center;
     border-radius: 50px;
     background-color: #51c65e;
-    transition: 0.2s;
+    transition: 0.3s;
   }
   &-third.active {
     transform: translateY(-75px);
