@@ -1,0 +1,19 @@
+.breadcrumbs {
+  padding: $padding 0;
+  color: $grey-color;
+  font-size: $font-size-s;
+
+  &__wrap {
+    display: flex;
+    gap: $gap;
+  }
+
+  &__link {
+    color: $grey-color;
+    transition: $transition;
+
+    &:hover {
+      color: $black-color;
+    }
+  }
+}
