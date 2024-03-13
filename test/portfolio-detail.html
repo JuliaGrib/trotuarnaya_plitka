@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/lightbox.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Document</title>
   </head>
@@ -130,292 +131,97 @@
         <div class="breadcrumbs__wrap">
           <a href="index.html" class="breadcrumbs__link">Главная</a>
           |
-          <span class="breadcrumbs__current">Портфолио</span>
+          <a href="portfolio.html" class="breadcrumbs__link">Портфолио</a>
+          |
+          <span class="breadcrumbs__current">Детальная страница портфолио</span>
         </div>
       </div>
     </div>
     <section class="page-content">
       <div class="container">
-        <h1 class="page-title">Портфолио</h1>
+        <h1 class="page-title">Детальная страница портфолио</h1>
         <div class="page-content__content">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/1.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/3.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+          <div class="page-img page-img_big">
+            <img src="./img/portfolio/6.jpg" alt="" />
+          </div>
+          <div class="row gy-4 mt-2 mt-md-2 mt-lg-4">
+            <div class="col-12 col-md-4">
+              <div class="page-list">
+                <h2 class="page-list__title">Было сделано:</h2>
+                <ul>
+                  <li>Выезд специалиста;</li>
+                  <li>Подбор цвета;</li>
+                  <li>Перетяжка мебели;</li>
+                  <li>Доставка.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="page-text page-text_grey">
+                <h3 class="page-text__title">Описание:</h3>
+                <p>
+                  Женя ну сюда так и просится этот блок. Давай его сделаем. Если
+                  будет пусто в админке, то ничего выводится не будет. То есть
+                  не будет всего серого блока, а не просто ОПИСАНИЕ и пустой
+                  серый блок.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="page-galery mt-4 mt-md-5">
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/1.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/1.jpg" alt=""
+              /></a>
+            </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/2.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/2.jpg" alt="" />
               </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/4.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/4.4.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/3.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/3.jpg" alt="" />
               </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/5.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/6.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/4.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/4.jpg" alt="" />
               </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/7.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/8.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/4.4.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/4.4.jpg" alt="" />
               </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/9.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/10.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/5.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/5.jpg" alt="" />
               </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/4.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/4.4.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/6.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/6.jpg" alt="" />
               </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/5.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/6.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/7.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/7.jpg" alt="" />
               </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/7.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/8.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/8.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/8.jpg" alt="" />
               </a>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <a href="portfolio-detail.html" class="card-slider">
-                <div class="card-slider__wrap">
-                  <img
-                    class="card-slider__img active"
-                    src="./img/portfolio/9.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="card-slider__img"
-                    src="./img/portfolio/10.jpg"
-                    alt=""
-                  />
-                  <div class="card-slider__section">
-                    <div class="img-first">
-                      <div class="card-slider__line active"></div>
-                    </div>
-                    <div class="img-second">
-                      <div class="card-slider__line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-slider__info">
-                  <h2 class="card-title">Перетяжка дивана</h2>
-                  <p class="card-descr">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has be...
-                  </p>
-                </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/9.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/9.jpg" alt="" />
+              </a>
+            </div>
+            <div class="page-galery__elem">
+              <a href="./img/portfolio/10.jpg" data-lightbox="page-galery"
+                ><img src="./img/portfolio/10.jpg" alt="" />
               </a>
             </div>
           </div>
@@ -429,7 +235,7 @@
           <div class="col-12 col-md-7 col-lg-5">
             <div class="block-name">
               <h3 class="block-name__title main-color">
-                Задайте вопросы или опишите ситуацию
+                Хотите такой же проект? Легко!
               </h3>
               <p class="block-name__text white-color">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -577,7 +383,9 @@
         </svg>
       </div>
     </div>
+
     <script src="./script/chats.js"></script>
     <script src="./script/card-slider.js"></script>
+    <script src="./script/lightbox-plus-jquery.js"></script>
   </body>
 </html>

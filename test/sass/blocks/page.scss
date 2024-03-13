@@ -18,3 +18,259 @@
     }
   }
 }
+
+.page-img {
+  overflow: hidden;
+  border-radius: $radius;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  &_big {
+    height: 768px;
+
+    @media screen and (max-width: 1399px) {
+      height: 600px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      height: 500px;
+    }
+
+    @media screen and (max-width: 991px) {
+      height: 450px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 350px;
+    }
+
+    @media screen and (max-width: 490px) {
+      height: 250px;
+    }
+  }
+
+  &_small {
+    height: 500px;
+    border-radius: $radius;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 991px) {
+      height: 350px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 250px;
+    }
+
+    @media screen and (max-width: 490px) {
+      height: 200px;
+    }
+  }
+}
+
+.page-list {
+  &__title {
+    padding-bottom: $padding-s;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+
+    li {
+      position: relative;
+      padding-left: 35px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 23px;
+        height: 23px;
+        background: $main-color url(../img/icons/done.svg) center center
+          no-repeat;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+.page-text {
+  &__title {
+    padding-bottom: $padding-xs;
+  }
+
+  &_grey {
+    background-color: $main-grey;
+    padding: $padding $padding-l;
+    border-radius: $radius;
+
+    @media screen and (max-width: 1399px) {
+      padding: $padding $padding-m;
+    }
+
+    @media screen and (max-width: 1199px) {
+      padding: $padding $padding;
+    }
+  }
+}
+
+.page-galery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap-m;
+
+  @media screen and (max-width: 991px) {
+    gap: $gap-s;
+  }
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 424px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__elem {
+    width: 100%;
+    height: 280px;
+    border-radius: $radius;
+    overflow: hidden;
+
+    @media screen and (max-width: 1199px) {
+      height: 220px;
+    }
+
+    @media screen and (max-width: 991px) {
+      height: 160px;
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 140px;
+    }
+
+    @media screen and (max-width: 424px) {
+      height: 200px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $transition;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.page-blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap-m;
+  margin-bottom: $padding-m;
+
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr 1fr;
+    gap: $gap-s;
+    margin-bottom: $padding-s;
+  }
+
+  @media screen and (max-width: 575px) {
+    grid-template-columns: 1fr;
+    gap: $gap-l;
+    margin-bottom: $padding-l;
+  }
+
+  &_first {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: $gap-m;
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr 1fr;
+      gap: $gap-s;
+    }
+
+    @media screen and (max-width: 575px) {
+      grid-template-columns: 1fr;
+      gap: $gap-l;
+    }
+  }
+}
+
+.page-content-small {
+  max-width: 900px;
+}
+
+.page-text {
+  img {
+    border-radius: $radius;
+  }
+
+  ul {
+    margin-left: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xs;
+
+    li {
+      position: relative;
+      padding-left: 25px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: $main-color;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  ol {
+    margin-left: 10px;
+    margin-bottom: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xs;
+
+    li {
+      position: relative;
+      padding-left: 25px;
+      counter-increment: item;
+
+      &::before {
+        content: counter(item);
+        position: absolute;
+        left: 0;
+        color: $main-color;
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.page-date {
+  font-size: 14px;
+  color: $grey-color;
+  margin-bottom: 0.5rem;
+}

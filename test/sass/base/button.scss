@@ -47,3 +47,20 @@
     }
   }
 }
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-xs;
+  padding: 15px 30px;
+  border-radius: 25px;
+  background-color: $main-color;
+  color: $black-color;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $main-color-hover;
+    color: $black-color;
+  }
+}
