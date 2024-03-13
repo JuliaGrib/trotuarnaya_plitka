@@ -1,0 +1,125 @@
+.card-blog {
+  width: 100%;
+
+  a {
+    color: $black-color;
+  }
+
+  &__img {
+    width: 100%;
+    height: 250px;
+    border-radius: $radius;
+    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+      height: 180px;
+    }
+
+    @media screen and (max-width: 575px) {
+      height: 200px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $transition;
+    }
+  }
+
+  &__info {
+    padding: $padding 0 0 0;
+    color: $black-color;
+  }
+
+  &__date {
+    color: grey;
+    font-size: 14px;
+  }
+}
+
+.card-blog_first {
+  position: relative;
+
+  .card-blog__img {
+    height: 500px;
+
+    @media screen and (max-width: 991px) {
+      height: 250px;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 180px;
+    }
+
+    @media screen and (max-width: 575px) {
+      height: 200px;
+    }
+  }
+
+  .card-blog__info {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 30px;
+    color: white;
+
+    @media screen and (max-width: 991px) {
+      position: static;
+      color: $black-color;
+      padding: $padding 0 0 0;
+    }
+  }
+
+  .card-blog__date {
+    color: white;
+
+    @media screen and (max-width: 991px) {
+      color: grey;
+    }
+  }
+
+  .card-blog__title {
+    @media screen and (max-width: 991px) {
+      font-size: 20px;
+      margin: 0.25rem 0 0 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  .card-blog__descr {
+    @media screen and (max-width: 991px) {
+      margin: 0.5rem 0 0 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+
+  .gradient {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: $radius;
+    background: linear-gradient(
+      0deg,
+      rgb(0 0 0 / 71%) 0px,
+      rgba(191, 188, 183, 0) 50%
+    );
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+}
+
+.card-blog:hover .card-blog__img img {
+  transform: scale(1.1);
+}

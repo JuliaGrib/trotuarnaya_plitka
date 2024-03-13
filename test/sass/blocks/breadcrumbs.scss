@@ -5,7 +5,12 @@
 
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
     gap: $gap;
+
+    @media screen and (max-width: 767px) {
+      gap: $gap-xs;
+    }
   }
 
   &__link {
